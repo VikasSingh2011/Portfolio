@@ -5,7 +5,7 @@ const PortfolioContext = createContext(null);
 
 const STORAGE_KEY = 'portfolio_cms_data_vikas_v4';
 const THEME_KEY = 'portfolio_theme_mode';
-export const API_BASE_URL = 'http://localhost:5000/api';
+export const API_BASE_URL = import.meta.env.VITE_API_URL || (typeof window !== 'undefined' && window.location.hostname === 'localhost' ? 'http://localhost:5000/api' : '');
 
 export function PortfolioProvider({ children }) {
   // Theme state
@@ -71,6 +71,11 @@ export function PortfolioProvider({ children }) {
   // Check Backend & MongoDB Status on load
   useEffect(() => {
     const checkBackend = async () => {
+      if (!API_BASE_URL) {
+        setBackendStatus('offline');
+        setDatabaseType('Local Storage');
+        return;
+      }
       try {
         const res = await fetch(`${API_BASE_URL}/health`, { signal: AbortSignal.timeout(3000) });
         if (res.ok) {
@@ -120,19 +125,21 @@ export function PortfolioProvider({ children }) {
     setData(next);
 
     // Try saving to Express / MongoDB backend
-    try {
-      const res = await fetch(`${API_BASE_URL}/portfolio`, {
-        method: 'PUT',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(next)
-      });
-      if (res.ok) {
-        const json = await res.json();
-        showToast(json.message || 'Changes saved to backend!');
-        return;
+    if (API_BASE_URL) {
+      try {
+        const res = await fetch(`${API_BASE_URL}/portfolio`, {
+          method: 'PUT',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(next)
+        });
+        if (res.ok) {
+          const json = await res.json();
+          showToast(json.message || 'Changes saved to backend!');
+          return;
+        }
+      } catch (e) {
+        // Backend not running, already saved to localStorage
       }
-    } catch (e) {
-      // Backend not running, already saved to localStorage
     }
 
     showToast('Changes saved locally! Real-time updates active.');

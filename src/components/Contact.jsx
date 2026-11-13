@@ -57,12 +57,14 @@ export default function Contact() {
     setIsSubmitting(true);
 
     try {
-      // Send to Express + MongoDB backend
-      await fetch(`${API_BASE_URL}/contact`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData)
-      });
+      // Send to Express + MongoDB backend if API configured
+      if (API_BASE_URL) {
+        await fetch(`${API_BASE_URL}/contact`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(formData)
+        });
+      }
     } catch (err) {
       // Backend not running, local storage fallback will save it
     }
