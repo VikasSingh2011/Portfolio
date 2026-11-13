@@ -118,17 +118,41 @@ export default function ResumeModal() {
                   <MapPin className="w-3.5 h-3.5 text-slate-400" />
                   {personal.location}
                 </span>
+                {personal.portfolioUrl && (
+                  <a
+                    href={personal.portfolioUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1 text-slate-900 font-medium hover:underline"
+                    title="Live Portfolio Website"
+                  >
+                    <ExternalLink className="w-3.5 h-3.5 text-slate-500" />
+                    Live Portfolio
+                  </a>
+                )}
                 {socials.github && (
-                  <span className="flex items-center gap-1">
+                  <a
+                    href={socials.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1 hover:underline"
+                    title="GitHub"
+                  >
                     <Github className="w-3.5 h-3.5 text-slate-400" />
                     GitHub
-                  </span>
+                  </a>
                 )}
                 {socials.linkedin && (
-                  <span className="flex items-center gap-1">
+                  <a
+                    href={socials.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1 hover:underline"
+                    title="LinkedIn"
+                  >
                     <Linkedin className="w-3.5 h-3.5 text-slate-400" />
                     LinkedIn
-                  </span>
+                  </a>
                 )}
               </div>
             </div>

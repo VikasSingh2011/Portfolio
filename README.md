@@ -1,5 +1,11 @@
-# Premium Developer Portfolio & Content Management System
+# Vikas Singh — Developer Portfolio & CMS
 ### Designed for B.Tech Computer Science & Engineering (2026 Batch)
+
+> **🚀 Live Website:** [https://portfolio-git-main-vikas-singhs-projects-b53a535f.vercel.app](https://portfolio-git-main-vikas-singhs-projects-b53a535f.vercel.app)
+> 
+> [![Live Demo](https://img.shields.io/badge/Live_Portfolio-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://portfolio-git-main-vikas-singhs-projects-b53a535f.vercel.app)
+> [![GitHub](https://img.shields.io/badge/GitHub-VikasSingh2011-181717?style=for-the-badge&logo=github)](https://github.com/VikasSingh2011/Portfolio)
+> [![LinkedIn](https://img.shields.io/badge/LinkedIn-Vikas_Singh-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/vikas-singh-b52068265/)
 
 A modern, production-grade, responsive developer portfolio with an integrated **Admin Content Management Studio (CMS)**. Built with React.js, Tailwind CSS, Lucide Icons, and Vite.
 
@@ -91,18 +97,9 @@ If you want to sync your portfolio edits to a cloud database instead of solely b
 
 ---
 
-## 🌐 Deploying to Vercel
-1. Push this repository to your GitHub account:
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit: Production-ready 2026 CSE portfolio"
-   git remote add origin https://github.com/yourusername/portfolio.git
-   git push -u origin main
-   ```
-2. Log in to [Vercel](https://vercel.com) and click **"Add New Project"**.
-3. Import your repository. Vercel automatically detects Vite:
-   - **Framework Preset**: Vite
-   - **Build Command**: `npm run build`
-   - **Output Directory**: `dist`
-4. Click **Deploy**! Your site is live with a global CDN and SSL certificate.
+## 🌐 Live Deployment
+- **Live URL**: [https://portfolio-git-main-vikas-singhs-projects-b53a535f.vercel.app](https://portfolio-git-main-vikas-singhs-projects-b53a535f.vercel.app)
+- **Hosting Platform**: Vercel (Continuous Deployment linked to GitHub branch `main`)
+- **Repository**: [https://github.com/VikasSingh2011/Portfolio](https://github.com/VikasSingh2011/Portfolio)
+
+Every new commit pushed to the `main` branch automatically triggers an optimized production build on Vercel.

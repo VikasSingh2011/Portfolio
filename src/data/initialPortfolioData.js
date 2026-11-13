@@ -10,6 +10,7 @@ export const initialPortfolioData = {
     phone: "+91 6386782044",
     avatar: "/images/vikas-singh.jpg",
     resumeUrl: "/Vikas_Singh_Resume.pdf",
+    portfolioUrl: "https://portfolio-git-main-vikas-singhs-projects-b53a535f.vercel.app",
     openToWork: true,
     statusText: "Actively seeking 2026 Software Engineering & Analyst Roles",
     yearsOfCoding: "3+ Years",
@@ -18,6 +19,7 @@ export const initialPortfolioData = {
   },
 
   socials: {
+    website: "https://portfolio-git-main-vikas-singhs-projects-b53a535f.vercel.app",
     github: "https://github.com/VikasSingh2011",
     linkedin: "https://www.linkedin.com/in/vikas-singh-b52068265/",
     leetcode: "https://leetcode.com",
