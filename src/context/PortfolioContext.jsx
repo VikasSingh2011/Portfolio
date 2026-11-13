@@ -3,7 +3,7 @@ import { initialPortfolioData } from '../data/initialPortfolioData';
 
 const PortfolioContext = createContext(null);
 
-const STORAGE_KEY = 'portfolio_cms_data_vikas_v4';
+const STORAGE_KEY = 'portfolio_cms_data_vikas_v5';
 const THEME_KEY = 'portfolio_theme_mode';
 export const API_BASE_URL = import.meta.env.VITE_API_URL || (typeof window !== 'undefined' && window.location.hostname === 'localhost' ? 'http://localhost:5000/api' : '');
 

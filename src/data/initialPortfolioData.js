@@ -186,45 +186,45 @@ export const initialPortfolioData = {
 
   skills: {
     "Programming Languages": [
-      { name: "Python", level: 90, badge: "Advanced" },
-      { name: "C++", level: 86, badge: "Proficient" },
-      { name: "JavaScript (ES6+)", level: 92, badge: "Advanced" },
-      { name: "C", level: 80, badge: "Proficient" },
-      { name: "SQL", level: 88, badge: "Advanced" }
+      { name: "Python", level: 80, badge: "Proficient" },
+      { name: "C++", level: 76, badge: "Proficient" },
+      { name: "JavaScript (ES6+)", level: 78, badge: "Proficient" },
+      { name: "C", level: 72, badge: "Proficient" },
+      { name: "SQL", level: 77, badge: "Proficient" }
     ],
     "Frontend Development": [
-      { name: "React.js", level: 94, badge: "Expert" },
-      { name: "Next.js", level: 86, badge: "Proficient" },
-      { name: "Tailwind CSS", level: 92, badge: "Advanced" },
-      { name: "HTML5 & CSS3", level: 95, badge: "Expert" }
+      { name: "React.js", level: 80, badge: "Proficient" },
+      { name: "Next.js", level: 75, badge: "Proficient" },
+      { name: "Tailwind CSS", level: 78, badge: "Proficient" },
+      { name: "HTML5 & CSS3", level: 80, badge: "Proficient" }
     ],
     "Backend & APIs": [
-      { name: "Node.js", level: 90, badge: "Advanced" },
-      { name: "Express.js", level: 90, badge: "Advanced" },
-      { name: "RESTful API Design", level: 92, badge: "Advanced" },
-      { name: "JWT Authentication", level: 88, badge: "Proficient" }
+      { name: "Node.js", level: 77, badge: "Proficient" },
+      { name: "Express.js", level: 78, badge: "Proficient" },
+      { name: "RESTful API Design", level: 78, badge: "Proficient" },
+      { name: "JWT Authentication", level: 75, badge: "Proficient" }
     ],
     "Databases & Cloud": [
-      { name: "MongoDB & Atlas", level: 90, badge: "Advanced" },
-      { name: "MySQL / SQL", level: 85, badge: "Proficient" },
-      { name: "Google Cloud Platform (GCP)", level: 75, badge: "Foundational" },
-      { name: "AWS (Basic)", level: 72, badge: "Foundational" },
-      { name: "Render & Vercel", level: 90, badge: "Advanced" },
-      { name: "Hostinger", level: 80, badge: "Proficient" }
+      { name: "MongoDB & Atlas", level: 78, badge: "Proficient" },
+      { name: "MySQL / SQL", level: 76, badge: "Proficient" },
+      { name: "Google Cloud Platform (GCP)", level: 72, badge: "Proficient" },
+      { name: "AWS (Basic)", level: 70, badge: "Proficient" },
+      { name: "Render & Vercel", level: 78, badge: "Proficient" },
+      { name: "Hostinger", level: 73, badge: "Proficient" }
     ],
     "Machine Learning & Data Science": [
-      { name: "Machine Learning (Scikit-Learn)", level: 85, badge: "Proficient" },
-      { name: "Deep Learning (CNNs)", level: 82, badge: "Proficient" },
-      { name: "Pandas & NumPy", level: 88, badge: "Advanced" },
-      { name: "Data Analysis & Visualization", level: 86, badge: "Advanced" },
-      { name: "Power BI, Matplotlib & Seaborn", level: 82, badge: "Proficient" }
+      { name: "Machine Learning (Scikit-Learn)", level: 76, badge: "Proficient" },
+      { name: "Deep Learning (CNNs)", level: 73, badge: "Proficient" },
+      { name: "Pandas & NumPy", level: 77, badge: "Proficient" },
+      { name: "Data Analysis & Visualization", level: 76, badge: "Proficient" },
+      { name: "Power BI, Matplotlib & Seaborn", level: 74, badge: "Proficient" }
     ],
     "Tools & Platforms": [
-      { name: "Git & GitHub", level: 92, badge: "Advanced" },
-      { name: "VS Code", level: 94, badge: "Expert" },
-      { name: "Postman API Testing", level: 90, badge: "Advanced" },
-      { name: "Jupyter Notebook", level: 88, badge: "Advanced" },
-      { name: "Canva", level: 85, badge: "Proficient" }
+      { name: "Git & GitHub", level: 80, badge: "Proficient" },
+      { name: "VS Code", level: 80, badge: "Proficient" },
+      { name: "Postman API Testing", level: 78, badge: "Proficient" },
+      { name: "Jupyter Notebook", level: 76, badge: "Proficient" },
+      { name: "Canva", level: 74, badge: "Proficient" }
     ]
   },
 
